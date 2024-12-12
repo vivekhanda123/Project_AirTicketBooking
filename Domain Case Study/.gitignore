@@ -1,0 +1,18 @@
+#Ignore Default Vs file of Visual Studio
+.vs/
+
+# Ignore Bin, Obj & Migration folders in AirTicketBooking_Backend
+AirTicketBooking_Backend/bin/
+AirTicketBooking_Backend/obj/
+AirTicketBooking_Backend/Migrations
+
+# Ignore appsettings.json in AirTicketBooking_Backend
+AirTicketBooking_Backend/appsettings.json
+
+
+#Ignoring Bin and Obj file of Testing Project
+AirTicketBooking_Testing/bin/
+AirTicketBooking_Testing/obj/
+
+# Ignore this folder if exists
+AitTicketBookingTestProject/

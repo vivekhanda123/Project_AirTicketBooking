@@ -1,0 +1,271 @@
+  .hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger-menu .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .sidebar.open {
+    left: 0; 
+  } */
+
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 250px;
+    height: 55%;
+    border-radius: 10px;
+    background-color: #f8f7f7;
+    color: white;
+    padding-top: 18px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 7px 10px;
+}
+  
+  .sidebar.open {
+    transform: translateX(0); /* Slide in when open */
+  }
+
+
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    /* padding: 10px 20px */
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* .sidebar ul li:hover {
+    background-color: #0d9348;
+    color: white;
+  } */
+
+  /* .sidebar ul li a {
+    text-decoration: none;
+    color: green;
+    font-size: 17px;
+    font-family: "Parkinsans", sans-serif;
+    border-bottom: 2px solid #cec2c28c;
+} */
+
+.sidebar ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 75%;
+  margin: 0 10px;
+  border-radius: 5px;
+  display: inline-block;
+  color: green;
+  font-size: 17px;
+  font-family: "Parkinsans", sans-serif;
+  border-bottom: 2px solid #cec2c28c;
+}
+
+.sidebar ul li a:hover{
+  background-color: #0d9348;
+  color: white;
+  /* border: none; */
+}
+
+  .sidebar h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background: green;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 7px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 16px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+}
+  
+  .main-content {
+    margin-left: 0; /* Remove shifting */
+    /* padding: 20px; */
+    transition: none; /* Disable transition for shifting */
+    position: relative;
+    z-index: 1; /* Ensure it's below the sidebar */
+  }
+  
+  
+  /* Uncomment Later */
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 0;
+    flex-grow: 1;
+    /* padding: 20px; */
+    transition: margin-left 0.3s ease;
+  }
+
+  /* .user-dashboard-container.menu-open .main-content,
+  .dashboard-container.menu-open .main-content {
+    margin-left: 250px; 
+  } */
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px; /* Slightly smaller sidebar on mobile */
+    }
+  
+    .hamburger-menu {
+      top: 15px;
+      left: 15px;
+    }
+  
+    .dashboard-container.menu-open .main-content {
+      margin-left: 200px; /* Adjust content margin for mobile */
+    }
+  }
+  
+  /* src/CSS/AdminDashboard.css */
+.register-flight-owner {
+    padding: 20px;
+  }
+  
+  .register-flight-owner form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-flight-owner input,
+  .register-flight-owner select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .register-flight-owner button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .success-message,
+  .error-message {
+    margin-top: 10px;
+    padding: 10px;
+    /* color: red; */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* src/CSS/AdminDashboard.css */
+.register-flight-owner {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .register-flight-owner form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-flight-owner input,
+  .register-flight-owner select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .register-flight-owner button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-flight-owner button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-message,
+  .error-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+
+  .user-dashboard-container {
+    display: flex;
+    position: relative;
+    transition: margin-left 0.3s ease;
+  }
+
+
+
+
+
+  /* --------- additional----- */
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 998; /* Below the sidebar */
+    display: none; /* Hidden by default */
+  }
+  
+  .backdrop.visible {
+    display: block; /* Show when the sidebar is open */
+  }
+  
